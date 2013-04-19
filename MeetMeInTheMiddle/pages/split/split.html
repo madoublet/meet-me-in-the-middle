@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>splitPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Bing Maps API reference -->
+    <script type="text/javascript" src="/Bing.Maps.JavaScript/js/veapicore.js"></script>
+    <script type="text/javascript" src="/Bing.Maps.JavaScript/js/veapiModules.js"></script>
+
+    
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/split/split.css" rel="stylesheet" />
+
+    <!-- jQuery and OATH -->
+    <script src="/js/jquery-1.7.2.min.js"></script>
+    <script src="/js/oauth.js"></script>
+    <script src="/js/sha1.js"></script>
+
+    <!-- data -->
+    <script src="/js/data.js"></script>
+
+    <script src="/pages/split/split.js"></script>
+</head>
+<body>
+    <!-- This template is used to display each item in the ListView declared below. -->
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <img class="item-image" src="#" data-win-bind="src: image_url; alt: name">
+        <div class="item-info">
+            <h3 class="item-title win-type-ellipsis" data-win-bind="textContent: name"></h3>
+            <h4 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: city_state"></h4>
+            <h4 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: distance"></h4>
+            <p><img class="rating-image" src="#" data-win-bind="src: rating_img_url"> <small class="basedon">Based on <span data-win-bind="textContent: review_count"></span> reviews</small></p>
+            <input class="title" type="hidden" data-win-bind="value: name">
+            <input class="address" type="hidden" data-win-bind="value: display_address">
+            <input class="url_address" type="hidden" data-win-bind="value: url_address">
+            <input class="phone" type="hidden" data-win-bind="value: display_phone">
+            <input class="lat" type="hidden" data-win-bind="value: latitude">
+            <input class="long" type="hidden" data-win-bind="value: longitude">
+            <input class="url" type="hidden" data-win-bind="value: url">
+            <input class="photo" type="hidden" data-win-bind="value: image_url">
+            <input class="ratingimage" type="hidden" data-win-bind="value: rating_img_url">
+            <input class="reviews" type="hidden" data-win-bind="value: review_count">
+            <input class="phone" type="hidden" data-win-bind="value: display_phone">
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="splitpage fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"></span> 
+                <a class="poweredBy" href="http://www.yelp.com"><img src="/images/yelp.png"></a>
+            </h1>
+        </header>
+        <section class="itemlistsection" aria-label="List section">
+           
+             <div class="locationForm">
+                <div class="field">
+                    <label for="location1">Where are you?</label>
+                    <input id="location1" type="text" data-loc="location1" data-icon="stache" />
+                </div>
+
+                <div class="field">
+                    <label for="location2">Where is your friend?</label>
+                    <input id="location2" type="text" data-loc="location2" data-icon="shades" placeholder="St. Louis, MO" />
+                </div>
+
+                <div id="where" class="field">
+                    <label for="more">Where do you want to meet?</label>
+                    <select id="more"></select>
+                </div>
+
+                <div class="actions">
+                    <button id="meetup">Meetup!</button>
+                </div>
+            </div>
+            <label id="searching" class="progressRingText"><progress class="win-ring withText"></progress> Getting locations from Yelp...</label>
+
+            <div class="error">
+                <span class="noresults">
+                    We couldn't find any results.  But, we only tried a <span id="radius" class="radius">5</span> mile radius.  Do you want to expand your search radius?
+                    <br><br>
+                    <button id="tryLarger">Try <span id="large">10</span> Miles</button>
+                    <button id="tryEvenLarger">Try <span id="larger">25</span> Miles</button>
+                </span>
+                <span class="noresultsLargest">
+                    We couldn't find any results.  And, we even tried a 25 mile radius.  Click back to try a new search.  <!--Do you want to try a new search?
+                    <br><br>
+                    <button id="newSearch">New Search</button>-->
+                </span>
+            </div>
+
+            <div class="itemlist" aria-label="List of this group's items" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'single', tapBehavior: 'directSelect' }"></div>
+        
+            <div class="directions">
+
+                <a class="backToResults">Back to Results</a>
+
+                <div class="directionsContainer">
+
+                <h2 id="name"></h2>
+                <p id="address"></p>
+                <p id="yelpLink"></p>
+                <p id="bingLink"></p>
+
+                <h3>My Directions</h3>
+                <p id="mydirections">
+
+                </p>
+                <h3>Friend's Directions</h3>
+                <p id="friendsdirections">
+
+                </p>
+                </div>
+            </div>
+        </section>
+        <section class="articlesection" aria-atomic="true" aria-label="Item detail" aria-live="assertive">
+            <div id="mapdiv"></div>
+        </section>
+    </div>
+</body>
+</html>

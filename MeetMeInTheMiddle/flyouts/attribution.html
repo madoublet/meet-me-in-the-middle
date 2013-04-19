@@ -1,0 +1,29 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>Default settings flyout</title>
+    </head>
+    <body>
+        <!-- BEGINTEMPLATE: Template code for an empty Settings Flyout. -->
+        <!-- Each settings flyout should be defined in its own HTML file. -->
+        <!-- Set the width to 'narrow' for a narrow settings flyout. -->
+        <!-- Set the background color for the header to the background color defined for your
+             app tile in the manifest. -->
+        <div id="attribution" data-win-control="WinJS.UI.SettingsFlyout" aria-label="App defaults settings flyout"
+                data-win-options="{width:'narrow'}">
+            <div class="win-header" style="background-color:#0c9ced">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">Defaults</div>
+                <img src="/images/smalllogo.png" style="position: absolute; right: 40px;"/>
+            </div>
+            <div class="win-content">
+                <p>Thank you to my wonderful wife for her support and her brilliant idea for this app.  Without her this application would not be possible.</p>
+
+                <p>Some icons used in this application are modified from icons made available by <a href="http://thenounproject.com/">The Noun Project</a>.</p>
+               
+                <p>For more information, contact <a href="http://twitter.com/matthewsmith">@matthewsmith</a>.</p>
+            </div>
+        </div>
+        <!-- ENDTEMPLATE -->
+    </body>
+</html>

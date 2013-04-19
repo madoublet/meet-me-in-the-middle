@@ -1,0 +1,537 @@
+﻿/* This selector is used to prevent ui-dark/light.css from overwriting changes
+   to .win-surface. */
+.itemspage .itemslist .win-horizontal.win-viewport .win-surface {
+    margin-left: 50px;
+}
+
+.itemspage h1 {
+    position: relative;
+    padding-left:  120px;
+    color:  #888;
+    font-size:  50px;
+    padding-top:  0;
+}
+
+    .fragment header[role=banner] .titlearea {
+        margin-top:15px;
+    }
+
+    .itemspage h1 span.pagetitle {
+        display:  none;
+    }
+
+.itemspage h1 img {
+    position:  absolute;
+    top:  10px;
+    left:  43px;
+}
+
+.itemspage h1 span.pro {
+    position:  absolute;
+    top:  30px;
+    left:  445px;
+}
+
+.upgrade {
+    position: absolute;
+    bottom:  19px;
+    left:  122px;
+}
+
+.upgrade .go-pro, .pro {
+    display: inline-block;
+    padding: 5px;
+    background-color: #0c9ced;
+    color: #fff !important;
+    font-weight: bold;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-size:  12px !important;
+}
+
+    .pro {
+        width: 40px;
+        display: none;
+    }
+
+    .upgrade h3 {
+        display:  inline-block;
+        font-size:  12px;
+        color:  #aaa;
+        font-weight: normal;
+        margin:  0;
+        text-align: center;
+    }
+
+        .upgrade h3 a {
+            display: inline-block;
+            margin-left: 5px;
+            color: #0c9ced;
+        }
+        
+        .upgrade h3 span {
+            display: block;
+            color: #ccc;
+            font-size:  10px;
+        }
+
+.submenu {
+    position: absolute;
+    bottom:  25px;
+    right:  20px;
+}
+
+    .submenu h3 {
+        display:  inline-block;
+        font-size:  12px;
+        color:  #aaa;
+        font-weight: normal;
+        margin:  0;
+        text-align: center;
+    }
+
+        .submenu h3 a {
+            color: #0c9ced;
+        }
+        
+        .submenu h3 span {
+            display: block;
+            color: #ccc;
+            font-size:  10px;
+        }
+
+    .topmenu {
+        position: absolute;
+        top:  0;
+        right:  20px;
+        height: 84px;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    img#peek {
+        position: absolute;
+        right:  7px;
+        /*bottom:  5px;*/
+        bottom:  -50px;
+        z-index: 1;
+    }
+
+    a#personalize {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom:  0;
+        padding:  10px 20px;
+        border:  1px solid #ccc;
+        background: #fff;
+        color:  #888;
+        z-index: 50;
+    }
+
+    .ad {
+      background: url('/images/ad-placeholder.png') no-repeat;
+    }
+    
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+
+    
+    .scrolling {
+        width:  100%;
+        height:  100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin:  0;
+        padding:  0;
+        white-space: nowrap;
+    }
+
+    .container:first-child {
+        margin-left:  112px;
+    }
+
+    .container {
+        display:  inline-block;
+        margin-right:  50px;
+        margin-top:  15px;
+        padding-left:  5px;
+    }
+
+    .container h2 {
+        margin-left:  3px;
+        margin-bottom:  10px;
+        font-size:  35px;
+        color:  #888;
+    }
+
+.group-3 {
+    display: -ms-grid;
+    -ms-grid-columns: 260px 260px 260px;
+}
+
+.group-4 {
+    display: -ms-grid;
+    -ms-grid-columns: 260px 260px 260px 260px;
+}
+
+.group-5 {
+    display: -ms-grid;
+    -ms-grid-columns: 260px 260px 260px 260px 260px;
+}
+    .col-1 {
+        -ms-grid-column: 1;
+    }
+    
+    .col-2 {
+        -ms-grid-column: 2;
+    }
+    
+    .col-3 {
+        -ms-grid-column: 3;
+    }
+    
+    .col-4 {
+        -ms-grid-column: 4;
+    }
+    
+    .col-5 {
+        -ms-grid-column: 5;
+    }
+
+    .ad {
+      margin: 2px;
+      border: 4px solid #fff;
+    }
+
+    .item {
+        position: relative;
+        width:  250px;
+        height:  125px;
+        margin:  2px;
+        border:  4px solid #fff;
+        background:  #ccc;
+    }
+
+        .item.more {
+          background: #888;
+          display: none;
+        }
+
+            .item.more h3 {
+              font-size: 18px;
+              color: #fff;
+              padding: 50px 0 0 0;
+              text-align: center;
+            }
+
+        .item:hover {
+            border:  4px solid #0c9ced;
+        }
+
+    .item.large {
+        width: 250px;
+        height:  530px;
+        background:  #f0f0f0;
+    }
+
+        .item .item-background {
+            position: absolute;
+            top:  0;
+            left:  0;
+        }
+        
+        .item .item-icon {
+            position: absolute;
+            top:  15px;
+            left:  75px;
+        }
+        
+        .item.large .item-icon {
+            position: absolute;
+            top:  192px;
+            left:  75px;
+        }
+
+        .item div.callout {
+            position:  absolute;
+            bottom:  0;
+            left:  0;
+            width:  220px;
+            padding: 10px 15px 5px 15px;
+            opacity: .95;
+            color:  #fff;
+        }
+        
+        .item.brown {
+            background-color: #c6937d;
+        }
+
+        .item.park-green {
+            background-color: #7fa957;
+        }
+
+        .item.cucumber {
+            background-color: #C6E8D0;
+        }
+
+        .item.shop-til-you-drop {
+            background-color: #99b1d0;
+        }
+        
+        .item.gold {
+            background-color:  #f7df98;
+        }
+        
+        .item.blue {
+            background-color: #6dc4f4;
+        }
+
+        .item.rock {
+            background-color: #ccc;
+        }
+        
+        .item.orange {
+            background-color: #f8b683;
+        }
+       
+       .item.red {
+            background-color: #dd9292;   
+        }
+
+        .item.velvet {
+            background-color: #9e8c9f;
+        }
+
+        .item.wine {
+            background-color: #d18396;
+        }
+
+        .item.salmon {
+            background-color: #dda59a;
+        }
+        
+        .item.sandwich {
+            background-color: #86b1b8;
+        }
+
+        .item.green {
+            background-color:  #bbdf81;
+        }
+        
+        .item.green {
+            background-color:  #bbdf81;
+        }
+        
+        .item.chili {
+            background-color:  #d48282;
+        }
+
+            .item.large.green div.callout {
+                background-color:  #8eca2d;
+            }
+        
+            .item.large.gold div.callout {
+                background-color:  #f1ca54;
+            }
+
+            .item.large.brown div.callout {
+                background-color:  #ae6930;
+            }
+
+            .item.large.blue div.callout {
+                background-color:  #0c9ced;
+            }
+        
+            .item.large.orange div.callout {
+                background-color:  #f38630;
+            }
+            
+            .item.large.red div.callout {
+                background-color:  #c74949;
+            }
+
+            .item div.callout h3 {
+                font-size:  18px;
+                margin:  0;
+                padding:  0 0 5px 0;
+            }
+            
+            .item div.callout p {
+                margin:  0;
+                padding:  0 0 5px 0;
+                display: none;
+            }
+
+        .item.large div.callout p {
+            display:  block;
+        }
+
+}
+
+@media screen and (-ms-view-state: snapped) {
+
+    .topmenu {
+        height: 70px;
+    }
+
+    .upgrade {
+        display: none;
+    }
+
+    .itemspage h1 {
+        color:  #888;
+        font-size:  30px;
+        font-weight: normal;
+        margin:  0;
+        padding:  35px 0 0 0 !important;
+        width: 70px;
+    }
+
+    .itemspage h1 img {
+        position:  absolute;
+        top:  0;
+        left:  0;
+    }
+    
+    .itemspage h1 span.pagetitle {
+        display:  none;
+    }
+
+    div.scrolling {
+        width:  100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .container {
+        padding-left:  20px;
+    }
+    
+    .container h2 {
+        font-size:  25px;
+        color:  #0c9ced;
+        margin-bottom:  10px;
+        font-weight: normal;
+    }
+    
+    .submenu {
+        display:  none;
+    }
+    
+    .item {
+        position:  relative;
+        min-height: 75px;
+        margin:  0 0 10px -2px;
+        border:  2px solid #fff;
+    }
+
+        .item.more {
+            background: #fff;
+            display: none;
+        }
+
+            .item.more h3 {
+              font-size: 18px;
+              color: #888;
+              padding: 20px 0 0 10px;
+              text-align: left;
+            }
+    
+        .item:hover {
+            border:  2px solid #0c9ced;
+        }
+    
+        .item.brown span.icon {
+            background-color: #c6937d;
+        }
+        
+        .item.gold span.icon {
+            background-color:  #f7df98;
+        }
+        
+        .item.blue span.icon {
+            background-color: #6dc4f4;
+        }
+        
+        .item.orange span.icon {
+            background-color: #f8b683;
+        }
+        
+        .item.salmon span.icon {
+            background-color: #dda59a;
+        }
+       
+       .item.red span.icon {
+            background-color: #dd9292;   
+        }
+
+        .item.velvet span.icon {
+            background-color: #9e8c9f;
+        }
+
+        .item.wine span.icon {
+            background-color: #d18396;
+        }
+
+        .item.green span.icon {
+            background-color:  #bbdf81;
+        }
+        
+        .item.chili span.icon {
+            background-color:  #d48282;
+        }
+
+        .item .item-background {
+            display:  none;
+        }
+
+        .item span.icon {
+            position: absolute;
+            top:  0;
+            left:  0;
+            display:  block;
+            width:  75px;
+            height:  75px;
+            line-height: 75px;
+        }
+
+        .item .item-icon {
+            position: absolute;
+            top:  8px;
+            left:  4px;
+            width: 70px;
+        }
+        
+            .item div.callout h3 {
+                font-size:  18px;
+                margin:  0;
+                padding:  8px 0 5px 85px;
+            }
+            
+            .item div.callout p {
+                margin:  0;
+                padding:  0 0 0 85px;
+                color:  #aaa;
+            }
+    
+    
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .itemspage .itemslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-height: 769px) {
+    
+    .container {
+        margin-top:  30px !important;
+    }
+}

@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>itemsPage</title>
+    
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/items/items.css" rel="stylesheet" />
+    
+    <script src="/js/default.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script src="/pages/items/items.js"></script>
+
+    <!-- Microsoft Advertising required references -->
+    <script src="/MSAdvertisingJS/ads/ad.js" ></script>
+</head>
+<body>
+  <!-- begin personalize -->
+    <div class="topmenu">
+        <a id="personalize">Personalize</a>
+    </div>
+
+    <!-- begin submenu -->
+    <div class="submenu">
+        <h3>Built in Manchester, MO by <a href="http://twitter.com/matthewsmith">@matthewsmith</a>.</h3>
+    </div>
+
+    <!-- begin upgrade -->
+    <div class="upgrade">
+        <h3><span class="go-pro">Go Pro</span> Remove the ads and get more categories for only $1.49 <a href="#">Upgrade Now</a></h3>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="itemspage fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" type="button" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <img src="/images/home-title.png">
+                <span class="pro">Pro</span>
+            </h1>
+        </header>
+        <section id="main" aria-label="Main content" role="main">
+
+            <div class="scrolling">
+
+                <!-- fun -->
+                <div id="fun" class="container">
+                    <h2>Fun</h2>
+                    <div class="group-4">
+                        <div class="col-1">
+                            <div id="beer" class="item large gold" data-category="pubs">
+                                <img class="item-background" src="/images/backgrounds/beer.png" />
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/beer.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Beer</h3>
+                                    <p>Meet me for a brew (or two)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div id="coffee" class="item large brown"  data-category="coffee">
+                                <img class="item-background" src="/images/backgrounds/coffee.png" />
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/coffee.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Coffee</h3>
+                                    <p>Meet me for a cup of joe</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div id="movie" class="item green" data-category="movietheaters">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/movie.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Movie</h3>
+                                    <p>Meet me for a flick</p>
+                                </div>
+                            </div>
+
+                            <div id="music" class="item gray" data-category="musicvenues">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/music.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Music</h3>
+                                    <p>Meet me for some tunes</p>
+                                </div>
+                            </div>
+
+                            <div id="spa" class="item cucumber" data-category="beautysvc">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/spa.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Spa</h3>
+                                    <p>Meet me for some relaxation</p>
+                                </div>
+                            </div>
+
+                            <div id="shopping" class="item shop-til-you-drop" data-category="shopping">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/shopping.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Shopping</h3>
+                                    <p>Meet me for some shopping</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-4">
+                            <div id="icecream" class="item blue" data-category="icecream">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/icecream.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Ice Cream</h3>
+                                    <p>Meet me for some ice cream</p>
+                                </div>
+                            </div>
+
+                            <div id="bowling" class="item velvet" data-category="bowling">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/bowling.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Bowling</h3>
+                                    <p>Meet me for some bowling</p>
+                                </div>
+                            </div>
+
+                            <div id="wine" class="item wine" data-category="wine_bars">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/wine.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Wine</h3>
+                                    <p>Meet me for some vino</p>
+                                </div>
+                            </div>
+
+                            <div id="funAd" class="ad" style="width: 250px; height: 125px; z-index: 1" 
+                              data-win-control="MicrosoftNSJS.Advertising.AdControl" 
+                              data-win-options="{applicationId: 'b96f7fa7-6f57-4e3c-a7ec-86a8197e8b54', adUnitId: '100969'}">
+                            </div>
+
+                            <div id="moreFun" class="item more" data-more="fun">
+                                <h3>More Fun...</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /#fun -->
+
+                <!-- food -->
+                <div class="container">
+                    <h2>Food</h2>
+                    <div class="group-4">
+                        <div class="col-1">
+                             <div id="restaurant" class="item orange large" data-category="restaurants">
+                                <img class="item-background" src="/images/backgrounds/restaurant.png" />
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/restaurant.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Restaurant</h3>
+                                    <p>Meet me for a bite to eat</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-2">
+                            <div id="pizza" class="item red large" data-category="pizza">
+                                <img class="item-background" src="/images/backgrounds/pizza.png" />
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/pizza.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Pizza</h3>
+                                    <p>Meet me for a slice of pie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div id="mexican" class="item green" data-categor="mexican">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/mexican.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Mexican</h3>
+                                    <p>Meet me for a burrito</p>
+                                </div>
+                            </div>
+
+                            <div id="thai" class="item chili" data-category="thai">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/thai.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Thai</h3>
+                                    <p>Meet me to thai one on</p>
+                                </div>
+                            </div>
+
+                            <div id="burger" class="item brown" data-category="burgers">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/burger.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Burgers</h3>
+                                    <p>Meet me for a burger</p>
+                                </div>
+                            </div>
+
+                            <div id="bbq" class="item red" data-category="bbq">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/bbq.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>BBQ</h3>
+                                    <p>Meet me for some smoke</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div id="sushi" class="item salmon" data-category="sushi">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/sushi.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Sushi</h3>
+                                    <p>Meet me for a crunch roll</p>
+                                </div>
+                            </div>
+
+                            <div id="sandwich" class="item sandwich" data-category="sandwiches">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/sandwich.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Sandwich</h3>
+                                    <p>Meet me for a club</p>
+                                </div>
+                            </div>
+
+                            <div id="indian" class="item velvet" data-category="indpak">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/indian.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Indian</h3>
+                                    <p>Hurry for some curry</p>
+                                </div>
+                            </div>
+
+                            <div id="foodAd" class="ad" style="width: 250px; height: 125px; z-index: 1" 
+                              data-win-control="MicrosoftNSJS.Advertising.AdControl" 
+                              data-win-options="{applicationId: 'b96f7fa7-6f57-4e3c-a7ec-86a8197e8b54', adUnitId: '100971'}">
+                            </div>
+
+                            <div id="moreFood" class="item more" data-more="food">
+                                <h3>More Food...</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /# food -->
+
+                <!-- outdoors -->
+                <div id="outdoors" class="container">
+                    <h2>Outdoors</h2>
+                    <div class="group-4">
+                        <div class="col-1">
+                             <div id="hiking" class="item orange large" data-category="hiking">
+                                <img class="item-background" src="/images/backgrounds/hiking.png" />
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/hiking.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Hiking</h3>
+                                    <p>Meet me for a walk</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-2">
+                            <div id="biking" class="item green large" data-category="mountainbiking">
+                                <img class="item-background" src="/images/backgrounds/biking.png" />
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/biking.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Biking</h3>
+                                    <p>Meet me for a ride</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div id="lakes" class="item blue" data-category="lakes">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/lakes.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Lakes</h3>
+                                    <p>Meet me for some jetskiing!</p>
+                                </div>
+                            </div>
+
+                            <div id="park" class="item park-green" data-category="parks">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/park.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Parks</h3>
+                                    <p>Meet me for a hike</p>
+                                </div>
+                            </div>
+
+                            <div id="dog" class="item brown" data-category="dog_parks">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/dog.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Dog Parks</h3>
+                                    <p>Meet me to walk our dogs</p>
+                                </div>
+                            </div>
+
+                            <div id="beaches" class="item gold" data-category="beaches">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/beach.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Beaches</h3>
+                                    <p>Meet me for some sun</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div id="playground" class="item orange" data-category="playgrounds">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/playground.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Playgrounds</h3>
+                                    <p>Meet me for a teeter totter</p>
+                                </div>
+                            </div>
+
+                            <div id="rock-climbing" class="item rock" data-category="rock_climbing">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/rock.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Rock Climbing</h3>
+                                    <p>Meet me for a climb</p>
+                                </div>
+                            </div>
+
+                            <div id="golf" class="item green" data-category="golf">
+                                <span class="icon">
+                                    <img class="item-icon" src="/images/icons/golf.png" />
+                                </span>
+                                <div class="callout">
+                                    <h3>Golf</h3>
+                                    <p>Meet me for some...four!</p>
+                                </div>
+                            </div>
+
+                            <div id="outdoorsAd" class="ad" style="width: 250px; height: 125px; z-index: 1" 
+                              data-win-control="MicrosoftNSJS.Advertising.AdControl" 
+                              data-win-options="{applicationId: 'b96f7fa7-6f57-4e3c-a7ec-86a8197e8b54', adUnitId: '100974'}">
+                            </div>
+
+                            <div id="moreOutdoors" class="item more" data-more="outdoors">
+                                <h3>More Outdoors...</h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- /# outdoors -->
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+﻿section.form {
+    margin-top:  25px;
+}
+
+.personalize p {
+    margin-left: 120px;
+}
+
+.personalize h1 {
+    position: relative;
+    padding-left: 45px;
+    font-size: 50px;
+    padding-top: 25px;
+}
+
+.personalize section {
+    margin-top: 50px;
+}
+
+.personalize span.field {
+    display:  block;
+    vertical-align: top;
+    margin:  0 0 25px 125px;
+}
+
+    .personalize span.field label {
+        display:  inline-block;
+        width: 200px;
+    }
+
+    .personalize span.field.listsel label {
+        height:  100px;
+        vertical-align: top;
+    }
+
+    .personalize span.field div.list {
+        display: inline-block;
+    }
+
+    .personalize span.character {
+        display: inline-block;
+        width:  100px;
+        height:  86px;
+        text-align: center;
+        line-height: 100px;
+        margin:  0 10px 0 0;
+        padding: 7px 0 7px 0;
+        border: 1px solid #ccc;
+    }
+
+        .personalize span.character.selected {
+            background-color: #dbf0fc;
+            border:  3px solid #0c9ced;
+        }
+
+
+@media screen and (-ms-view-state: snapped) {
+
+    .personalize section {
+        overflow: scroll;
+        padding-left: 45px;
+        margin-top: 0;
+    }
+
+    .personalize h1 {
+        position: relative;
+        font-size:  30px;
+        padding-top:  0;
+        padding-left: 10px;
+    }
+
+    .personalize span.character {
+        display: block;
+        width:  100%;
+    }
+
+    .personalize span.field {
+        margin:  0 0 25px 25px;
+    }
+
+    .personalize span.field label {
+        display:  block;
+        width: auto;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .personalize span.field.listsel label {
+        height:  auto;
+    }
+
+}

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>personalize</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+    <link href="/pages/personalize/personalize.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/pages/personalize/personalize.js"></script>
+</head>
+<body>
+    <div class="personalize fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Personalize</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main" class="form">
+            
+            <span class="field listsel">
+                <label>My Character:</label>
+                <div id="mycharacter" class="list"></div>
+            </span>
+        
+            <span class="field listsel">
+                <label>Friend's Character:</label>
+                <div id="friendcharacter" class="list"></div>
+            </span>
+           
+        </section>
+    </div>
+</body>
+</html>
