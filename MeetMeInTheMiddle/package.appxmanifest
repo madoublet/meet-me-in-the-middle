@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="21582MatthewSmith.MeetmeintheMiddle" Version="1.1.0.21" Publisher="CN=2B65D51B-8A7C-4E0E-83F5-8376A1C7A776" />
+  <Identity Name="21582MatthewSmith.MeetmeintheMiddle" Version="1.1.0.21" Publisher="REDACTED-DONT LOOK AT HISTORY" />
   <Properties>
     <DisplayName>Meet me in the Middle</DisplayName>
     <PublisherDisplayName>Matthew Smith</PublisherDisplayName>
